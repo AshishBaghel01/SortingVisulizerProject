@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <h1>SORTING VISUALIZATION</h1>
+
+      <label class="switch">
+        Dark Mode: 
+        <input type="checkbox" id="darkToggle" />
+        <span class="slider"></span>
+      </label>
+
+      <label>Input Size:</label>
+      <input type="number" id="arraySize" min="5" max="100" value="20" />
+
+      <label>Initial Array:</label>
+      <select id="initialArray">
+        <option value="random">Random</option>
+      </select>
+
+      <label>Sorting Algorithm</label>
+      <select id="algorithm">
+        <option value="mergeSort">Merge Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="insertionSort">Insertion Sort</option>
+        <option value="heapSort">Heap Sort</option>
+      </select>
+
+      <label>Speed:</label>
+      <input type="range" id="speedSlider" min="10" max="1000" value="100" />
+
+      <button id="startBtn">START</button>
+    </div>
+
+    <div class="bars-container" id="barsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
